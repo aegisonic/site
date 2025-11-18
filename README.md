@@ -5,7 +5,8 @@ Static site for Aegisonic, a project seeking to provide an equitable acoustic ex
 
 ### Blog posts
 
-Located within `content/blog`. To add a post, create a new text (.md) file, with the following frontmatter to the top of the document. Placeholders should be populated with the relevant information for that post. 
+Located within `content/blog`. 
+Blog posts are created as text (.md) files with the following frontmatter to the top of the document.
 
 ```
 ---
@@ -15,6 +16,16 @@ description: "{{description}}"
 draft: true
 ---
 ```
+
+To create a new blog post from the command line, enter:
+```
+hugo new blog/{{new post name}}.md
+```
+
+Or copy the frontmatter above and populate the placeholder fields.
+
+**Note:** `draft` must be set to false for the blog post to be published/visible on the site.
+
 
 ### Photo gallery
 
