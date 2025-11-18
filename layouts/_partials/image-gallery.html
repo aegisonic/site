@@ -1,0 +1,17 @@
+<!-- Credit: HugoCodex (https://github.com/jhvanderschee/hugocodex) with some modifications -->
+{{ $limit := .limit }}
+<ul class="image-gallery p-bl-100">
+{{ $galleryPage := site.GetPage "gallery" }}
+
+{{ range first $limit ($galleryPage.Resources.ByType "image") }}
+    <li>
+        <figure>
+            {{ $imgtitle := path.BaseName .Title }}
+            <a href="{{ (.Fit "1600x1600 q50").Permalink }}" title="{{ $imgtitle }}" class="lightbox-image">
+                <img src="{{ .Permalink }}" alt="{{ $imgtitle }}" title="{{ $imgtitle }}">
+            </a>
+            <figcaption>{{ $imgtitle }}</figcaption>
+        </figure>
+    </li>
+{{ end }}
+</ul>

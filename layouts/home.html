@@ -1,0 +1,42 @@
+{{ define "main" }}
+  <section>
+    <div class="container">
+        <div class="hero">
+            {{ .Content }}
+            <div class="d-fb-r jc-s ai-c fc-n-500 m-bl-100">
+                <span><a href="{{ .Site.Params.hero.link }}" >{{ .Site.Params.hero.cta }} →</a></span>
+            </div>
+        </div>
+
+    </div>
+  </section>
+  <div class="logo-divider-wrap">
+    <div class="container">
+        <div class="d-fb-r jc-e ai-e">
+            <div class="pos-r d-fb jc-e ai-e logo-divider">
+                <img class="leaf-l" src="/logo-flatline.svg">
+                <img src="/logomark.svg">
+                <img class="leaf-r" src="/logo-flatline.svg">
+            </div>
+        </div>
+    </div>
+  </div>
+  <section>
+    <div class="container">
+        <h2>Latest developments</h2>
+        {{ partial "blog-list.html" . }}
+        <div class="d-fb-r jc-e ai-c fc-n-500 m-bl-100">
+            <span><a href="/blog" >All blog posts →</a></span>
+        </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+        <h2>Photo gallery</h2>
+        {{ partial "image-gallery" (dict "context" . "limit" 3) }}
+        <div class="d-fb-r jc-e ai-c fc-n-500 p-bl-100 bd-t">
+            <span><a href="/gallery">Full gallery →</a></span>
+        </div>
+    </div>
+  </section>
+{{ end }}

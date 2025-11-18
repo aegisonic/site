@@ -1,0 +1,14 @@
+{{ define "main"}}
+
+<section>
+    <div class="container">
+        {{ partial "breadcrumbs.html" . }}
+        <article>
+            <h1>Blog</h1>
+            {{ partial "blog-list.html" . }}
+        </article>
+    </div>
+    
+</section>
+
+{{ end }}

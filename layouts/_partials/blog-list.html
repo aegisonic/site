@@ -1,0 +1,15 @@
+<div class="d-fb-c">
+    {{ range where .Site.RegularPages "Section" "blog" }}
+    <div class="d-fb ai-s p-bl-100 bd-b fw-w bli-item">
+        <span class="fc-n-500 m-b-050 bli-date">
+            {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := .Date | time.Format "Jan 01" }}
+            <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        </span>
+        <a class="bli-body" href="{{ .RelPermalink }}">
+            <h3 class="m-t-0">{{ .Title }}</h3>
+            <p class="lc-2 fc-n-800">{{ .Description }}</p>
+        </a>
+    </div>
+    {{ end }}
+</div>

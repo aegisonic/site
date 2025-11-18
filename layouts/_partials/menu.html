@@ -1,0 +1,7 @@
+<nav>
+    <ul>
+        {{ range .Site.Menus.main }}
+            <li class="bdr-sm"><a href="{{ .URL }}"> {{ .Name }} </a></li>
+        {{ end }}
+    </ul>
+</nav>

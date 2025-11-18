@@ -1,0 +1,6 @@
+<ul id="breadcrumbs" class="breadcrumbs fc-3">
+    {{- range .Ancestors.Reverse }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="m-in-025">/</span></li>
+    {{- end }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+</ul>

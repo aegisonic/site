@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section>
+    <div class="container">
+        {{ partial "breadcrumbs.html" . }}  
+        <article>
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </article>
+    </div>
+    <div class="container">
+        {{ partial "image-gallery" (dict "context" . "limit" 99) }}
+    </div>
+</section>
+{{ end }}
