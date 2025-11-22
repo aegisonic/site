@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Aegisonic</title>
-    <link>http://localhost:9999/</link>
+    <link>https://aegisonic.org/</link>
     <description>Recent content in Home on Aegisonic</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 15 Nov 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:9999/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://aegisonic.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>http://localhost:9999/about/</link>
+      <link>https://aegisonic.org/about/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:9999/about/</guid>
+      <guid>https://aegisonic.org/about/</guid>
       <description>&lt;p&gt;Aegisonic is a project founded as part of Mt. Sinai 2025 Pitch Day, seeking to address the clear lack of a market solution for those with heightened sound sensitivity with a headset designed to provide an equitable sonic experience for all.&lt;/p&gt;&#xA;&lt;h2 id=&#34;confronting-a-sonically-inaccessible-world&#34;&gt;Confronting a sonically inaccessible world&lt;/h2&gt;&#xA;&lt;p&gt;Decreased Sound Tolerance (DST) is a significant challenge for those with Autism, affecting approximately 60M people globally — 1 in 45 adults, and 1 in 31 children. 40%-50% of this population experience hyperacusis or misophonia, meaning they perceive loud sounds as 3-4x louder than the general population.&#xA;For those with Autism and DST, the world is full of loud, unpredictable noise that high levels of stress. For those who experience hyperacusis or misophonia, the sounds of a doctor&amp;rsquo;s office, public transportation, or a baby&amp;rsquo;s cry, create significant challenges. For many, the resultant stress is a barrier, meaning they are deterred from receiving medical treatment, riding transit to work, and starting a family.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Gallery</title>
-      <link>http://localhost:9999/gallery/</link>
+      <link>https://aegisonic.org/gallery/</link>
       <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:9999/gallery/</guid>
+      <guid>https://aegisonic.org/gallery/</guid>
       <description></description>
     </item>
   </channel>

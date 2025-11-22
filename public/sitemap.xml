@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:9999/about/</loc>
+    <loc>https://aegisonic.org/about/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9999/gallery/</loc>
+    <loc>https://aegisonic.org/gallery/</loc>
     <lastmod>2025-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9999/blog/</loc>
+    <loc>https://aegisonic.org/blog/</loc>
     <lastmod>2023-11-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:9999/</loc>
+    <loc>https://aegisonic.org/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:9999/categories/</loc>
+    <loc>https://aegisonic.org/categories/</loc>
   </url><url>
-    <loc>http://localhost:9999/tags/</loc>
+    <loc>https://aegisonic.org/tags/</loc>
   </url>
 </urlset>
