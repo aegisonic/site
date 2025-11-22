@@ -1,28 +1,36 @@
 {{ define "main" }}
-  <section>
+<section>
     <div class="container">
         <div class="hero">
             {{ .Content }}
             <div class="d-fb-r jc-s ai-c fc-n-500 m-bl-100">
-                <span><a href="{{ .Site.Params.hero.link }}" >{{ .Site.Params.hero.cta }} →</a></span>
+                <span><a href="{{ .Site.Params.hero.link }}">{{ .Site.Params.hero.cta }} →</a></span>
             </div>
         </div>
 
     </div>
-  </section>
-  <div class="logo-divider-wrap">
+</section>
+<div class="logo-divider-wrap">
     <div class="container">
         <div class="d-fb-r jc-e ai-e">
             <div class="pos-r d-fb jc-e ai-e logo-divider">
-                <img class="leaf-l" src="/logo-flatline.svg">
+                <svg class="leaf-l" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.5 11" preserveAspectRatio="none">
+                    <rect y="7.165" width="11.5" height=".665" fill="#8ce1f0" />
+                    <rect y="8.8" width="11.5" height=".665" fill="#64c8f1" />
+                    <rect y="10.335" width="11.5" height=".665" fill="#32abf6" />
+                </svg>
                 <img src="/logomark.svg">
-                <img class="leaf-r" src="/logo-flatline.svg">
+                <svg class="leaf-r" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.5 11" preserveAspectRatio="none">
+                    <rect y="7.165" width="11.5" height=".665" fill="#8ce1f0" />
+                    <rect y="8.8" width="11.5" height=".665" fill="#64c8f1" />
+                    <rect y="10.335" width="11.5" height=".665" fill="#32abf6" />
+                </svg>
             </div>
         </div>
     </div>
-  </div>
+</div>
 
-  <!-- <section>
+<!-- <section>
     <div class="container">
         <h2>Latest developments</h2>
         {{ partial "blog-list.html" . }}
@@ -32,7 +40,7 @@
     </div>
   </section> -->
 
-  <section>
+<section>
     <div class="container">
         <h2>Photo gallery</h2>
         {{ partial "image-gallery" (dict "context" . "limit" 3) }}
@@ -40,5 +48,5 @@
             <span><a href="/gallery">Full gallery →</a></span>
         </div>
     </div>
-  </section>
+</section>
 {{ end }}

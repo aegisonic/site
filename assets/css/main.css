@@ -282,13 +282,14 @@ article {
   z-index: -1;
 }
 
-.logo-divider img {
+.logo-divider img,
+.logo-divider svg {
   height: 8em;
   object-fit: fill;
 }
 
-.logo-divider img.leaf-l,
-.logo-divider img.leaf-r {
+.logo-divider svg.leaf-l,
+.logo-divider svg.leaf-r {
   width: 100%;
   object-fit: none;
   position: absolute;
@@ -296,11 +297,11 @@ article {
   bottom: 0px;
 }
 
-.logo-divider img.leaf-l {
+.logo-divider svg.leaf-l {
   left: 100%;
 }
 
-.logo-divider img.leaf-r {
+.logo-divider svg.leaf-r {
   right: 100%;
 }
 
