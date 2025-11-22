@@ -5,17 +5,17 @@ description:
 draft: false
 ---
 
-Aegisonic is a project founded as part of Mt. Sinai 2025 Pitch Day, seeking to address the clear lack of a market solution for those with heightened sound sensitivity with a headset designed to provide an equitable sonic experience for all. 
+At Aegisonic, we are developing an adaptive audio headset designed to support individuals with heightened sound sensitivity, with a particular focus on the autistic community. Our goal is to address the shortage of effective, purpose-built solutions by creating a headset that reduces perceived volume and narrows harsh dynamic ranges, ultimately providing a more comfortable and equitable sonic experience for all.
 
 ## Confronting a sonically inaccessible world
 
-Decreased Sound Tolerance (DST) is a significant challenge for those with Autism, affecting approximately 60M people globally — 1 in 45 adults, and 1 in 31 children. 40%-50% of this population experience hyperacusis or misophonia, meaning they perceive loud sounds as 3-4x louder than the general population.
-For those with Autism and DST, the world is full of loud, unpredictable noise that high levels of stress. For those who experience hyperacusis or misophonia, the sounds of a doctor's office, public transportation, or a baby's cry, create significant challenges. For many, the resultant stress is a barrier, meaning they are deterred from receiving medical treatment, riding transit to work, and starting a family. 
+Decreased Sound Tolerance (DST) is a significant challenge within the 60-million-person autism community. An estimated 40–50% of this population experiences hyperacusis or misophonia, which can result in a 3–4× louder perception of high-volume sounds compared to the general population. For those with autism and DST, the world’s loud and unpredictable sounds are often experienced as painful and intolerable. Important activities such as going to the doctor, riding public transportation, or being aware of a baby's cry can become major sensory challenges. For many, the resulting stress becomes a barrier, deterring them from receiving medical care, commuting to work, or starting a family.
 
 ## Market shortcomings
 
-For most people, adaptive noise canceling (ANC) headphones or earplugs provide sufficient protection from sudden, unwanted sound, but not for those with highest acoustic sensitivity. Earmuffs — like those worn at gun ranges — offer more protection, but apply too much pressure to be worn comfortably for extended periods of time. 
+For most people, adaptive noise canceling (ANC) headphones or earplugs provide sufficient protection from sudden, unwanted sound, but not for those with highest acoustic sensitivity. Earmuffs — like those worn for construction — offer more protection and are often recommended for those with autism, but users report that they apply too much pressure to be worn comfortably for extended periods of time. 
 
 ## Our solution
 
-With new techniques for adaptable sound processing, and a research and development effort focused on autistic experience, our headset will create an affordable, accessible means for navigating in our noisy world, and ensuring that no part of life — for parenthood to healthcare — is inaccessible due to sound.
+Aegisonic uses a proprietary adaptive sound-processing system designed to reduce the intensity of harsh or unpredictable sounds while giving users intuitive control over their listening environment through a single dial. By integrating this technology into an affordable, comfortable headset, we aim to make even the noisiest settings — from busy cities to everyday homes — more accessible for everyone.
+
