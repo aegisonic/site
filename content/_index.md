@@ -6,6 +6,6 @@ draft: false
 
 # Equitable acoustics
 
-Aegisonic is developing an adaptive headset to reduce auditory overstimulation & distress in autism as part of Mt. Sinai 2025 Pitch Day.
+Aegisonic is developing an adaptive headset to reduce auditory overstimulation & distress for populations with autism and hyperacusis.
 
 We’re striving to make everyday life more accessible for those with heightened sound sensitivity.
