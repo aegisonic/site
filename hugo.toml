@@ -11,14 +11,9 @@ description= "An adaptive headset designed to reduce auditory overstimulation & 
         weight = 1
 
     [[menus.main]]
-        name = 'Blog'
-        url = '/blog'
-        weight = 2
-
-    [[menus.main]]
         name = 'Gallery'
         url = '/gallery'
-        weight = 3
+        weight = 2
 
 [params]
     tagline = "Equitable acoustics"
