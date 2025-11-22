@@ -2,5 +2,5 @@
     {{- range .Ancestors.Reverse }}
         <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="m-in-025">/</span></li>
     {{- end }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    <li>{{ .Title }}</li>
 </ul>
