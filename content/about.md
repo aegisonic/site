@@ -5,6 +5,10 @@ description:
 draft: false
 ---
 
+At Aegisonic, we are developing an adaptive audio headset to support individuals experiencing heightened sound sensitivity, with a focus on the autistic community. 
+
+Our goal is to address the shortage of effective, purpose-built solutions with a headset that reduces perceived volume and narrows harsh dynamic ranges, ensuring a comfortable, equitable sonic experience for all.
+
 ## Confronting a sonically inaccessible world
 
 Decreased Sound Tolerance (DST) is a significant challenge within the 60-million-person autism community. An estimated 40–50% of this population experiences hyperacusis or misophonia, which can result in a 3–4× louder perception of high-volume sounds compared to the general population. 

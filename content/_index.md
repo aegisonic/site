@@ -6,6 +6,6 @@ draft: false
 
 # Equitable acoustics
 
-At Aegisonic, we are developing an adaptive audio headset to support individuals experiencing heightened sound sensitivity, with a focus on the autistic community. 
+Aegisonic is developing an adaptive headset to reduce auditory overstimulation & distress for populations with autism.
 
-Our goal is to address the shortage of effective, purpose-built solutions with a headset that reduces perceived volume and narrows harsh dynamic ranges, ensuring a comfortable, equitable sonic experience for all.
+We’re striving to make everyday life more accessible for those with heightened sound sensitivity.
