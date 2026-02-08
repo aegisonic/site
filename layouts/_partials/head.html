@@ -5,9 +5,9 @@
 <link href="https://cdn.jsdelivr.net/npm/modern-normalize@v3.0.1/modern-normalize.min.css" rel="stylesheet">
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ .Params.Favicon16 }}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ .Params.Favicon32}}">
+<link rel="icon" type="image/svg+xml" href="{{ .Params.FaviconSVG }}">
 <meta property="og:title" content="{{ if .IsHome }}{{ site.Title }} - {{ .Site.Params.tagline}}{{ else }}{{ printf "%s - %s" .Title site.Title }}{{ end }}" />
 <meta property="og:description" content="{{ .Site.Params.description}}" />
 <meta property="og:image" content=""/>

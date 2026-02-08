@@ -1,4 +1,9 @@
-{{ partial "logo-divider.html" }}
+{{ if eq .Title "Home"}}
+{{ else }}
+    <div class="p-t-500">
+        {{ partial "logo-divider.html" }}
+    </div>
+{{ end }}
 <div class="container">
     <div class="p-bl-200">
         <!-- <img src="/combomark.svg" alt="Aegisonic"> -->

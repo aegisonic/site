@@ -14,6 +14,7 @@
     {{- end }}
   {{- end }}
 {{- end }}
+
 {{- with resources.Get "js/lightbox.js" }}
   {{- $opts := dict
     "minify" (not hugo.IsDevelopment)
