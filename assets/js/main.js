@@ -3,25 +3,30 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('nav-main');
     const toggle = document.getElementById('nav-toggle');
-    console.log(toggle);
+    console.log(menu);
 
     toggle.addEventListener('click', function () {
         console.log("clicking menu");
-        menu.classList.toggle('closed');
-        menu.classList.toggle('open');
-        toggle.classList.toggle('active')
         const isOpen = menu.classList.contains('open');
+        if (isOpen) {
+            console.log("is open");
+            menu.classList.remove('open');
+        } else {
+            console.log("is not open");
+            menu.classList.add('open')
+        }
+        toggle.classList.toggle('active');
         this.setAttribute('aria-expanded', isOpen);
     });
 
-    document.addEventListener('click', function (e) {
-        if (!toggle.contains(e.target) && !menu.contains(e.target)) {
-            menu.classList.remove('open');
-            menu.classList.add('closed');
-            toggle.classList.remove('active');
-            toggle.setAttribute('aria-expanded', 'false');
-        }
-    });
+    // document.addEventListener('click', function (e) {
+    //     if (!toggle.contains(e.target) && !menu.contains(e.target)) {
+    //         menu.classList.remove('open');
+    //         menu.classList.add('closed');
+    //         toggle.classList.remove('active');
+    //         toggle.setAttribute('aria-expanded', 'false');
+    //     }
+    // });
 
     // SMOOTH SCROLLING
 
