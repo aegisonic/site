@@ -1,4 +1,4 @@
-<!-- Credit: HugoCodex (https://github.com/jhvanderschee/hugocodex) with some modifications -->
+
 {{ $limit := .limit }}
 
 {{ $galleryImages := (site.GetPage "gallery").Resources.ByType "image" }}
@@ -10,8 +10,9 @@
 {{ end }}
 
 <ul class="image-gallery p-bl-100">
-{{ range sort ($hopper | collections.Reverse) }}
+{{ range first $limit ($hopper | collections.Reverse) }}
     <li>
+        <!-- Credit: HugoCodex (https://github.com/jhvanderschee/hugocodex) with some modifications -->
         <figure>
             {{ $imgtitle := path.BaseName .Title }}
             <a href="{{ (.Fit " 1600x1600 q50").Permalink }}" title="{{ $imgtitle }}" class="lightbox-image">
