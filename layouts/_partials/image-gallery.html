@@ -1,30 +1,41 @@
 
-{{ $limit := .limit }}
+<!-- partial "image-gallery" (dict "context" . "type" "feat" "cols" 3 "limit" 3) -->
 
 {{ $toDisplay := slice }}
+{{ $hopper := slice }}
+{{ $cols := .cols }}
+{{ $limit := 9999 }}
+{{ $sort := "desc" }}
 
-{{ $galleryImages := (site.GetPage "gallery").Resources.ByType "image" }}
-{{ $hopper := $galleryImages}}
+{{ with .sort }}{{ $sort = . }}{{ end }}
+{{ with .limit }}{{ $limit = . }}{{ end }}
 
-{{ $pages := where site.RegularPages "Type" "blog" }}
-{{ range $pages }}
-    {{ $hopper = $hopper | append (.Resources.ByType "image") }}
-{{ end }}
-
-{{ if eq .type "feat" }}
-  {{ range $hopper }}
-    {{ $fileName := path.BaseName .Name }}
-    {{ if in site.Params.featuredImages $fileName }}
-      {{ $toDisplay = $toDisplay | append . }}
-    {{ end }}
-  {{ end }}
+{{ if eq .type "page" }}
+    {{ $toDisplay = .images }}
 {{ else }}
-    {{ $toDisplay = $hopper }}
+    {{ $galleryImages := (site.GetPage "gallery").Resources.ByType "image" }}
+    {{ $hopper := $galleryImages}}
+
+    {{ $pages := where site.RegularPages "Type" "blog" }}
+    {{ range $pages }}
+        {{ $hopper = $hopper | append (.Resources.ByType "image") }}
+    {{ end }}
+
+    {{ if eq .type "feat" }}
+        {{ range $hopper }}
+            {{ $fileName := path.BaseName .Name }}
+            {{ if in site.Params.featuredImages $fileName }}
+            {{ $toDisplay = $toDisplay | append . }}
+            {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ $toDisplay = $hopper }}
+    {{ end }}
 {{ end }}
 
-{{ $toDisplay := collections.Sort $toDisplay "Name" "desc" }}
+{{ $toDisplay := collections.Sort $toDisplay "Name" $sort }}
 
-<ul class="image-gallery p-bl-100">
+<ul class="image-gallery {{ if $cols }}cols-{{ $cols }}{{ end }} p-bl-100">
 {{ range first $limit $toDisplay }}
     <li>
         <!-- Credit: HugoCodex (https://github.com/jhvanderschee/hugocodex) with some modifications -->

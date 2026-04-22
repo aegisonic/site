@@ -4,6 +4,7 @@ title: "New York Regional I-Corps Bootcamp"
 description: "Aegisonic graduates from the Winter 2026 New York I-Corps Hub Wide Regional Lean Bootcamp."
 author:
 draft: false
+gallery: false
 ---
 Aegisonic graduated from the Winter 2026 New York I-Corps Hub Wide Regional Lean Bootcamp on January 23, 2026, gaining early-stage education & strategic guidance as we advance our technological development. 
 
