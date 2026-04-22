@@ -3,16 +3,16 @@
 :root {
   /* # Color */
 
-  --color-neutral-100: #f8fbfd;
-  --color-neutral-200: #f1f6fa;
-  --color-neutral-300: #cdcdcd;
+  --color-neutral-100: hsl(204, 45%, 96%);
+  --color-neutral-200: hsl(207, 45%, 93%);
+  --color-neutral-300: hsl(207, 45%, 90%);
   --color-neutral-400: #todo;
-  --color-neutral-500: #63717a;
-  --color-neutral-600: #485055;
+  --color-neutral-500: hsl(203, 10%, 43%);
+  --color-neutral-600: hsl(203, 8%, 31%);
   --color-neutral-700: #todo;
-  --color-neutral-800: #383e42;
-  --color-neutral-900: #282b2d;
-  --color-neutral-950: #191a1b;
+  --color-neutral-800: hsl(204, 8%, 24%);
+  --color-neutral-900: hsl(204, 6%, 17%);
+  --color-neutral-950: hsl(210, 4%, 10%);
 
   --color-primary: #32abf6;
   --color-secondary: #64c8f1;
