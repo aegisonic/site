@@ -2,7 +2,6 @@
 date: "2025-12-12"
 title: "Winner at Mount Sinai DIH Pitch Day"
 description: "Aegisonic selected as one of the three winners of the Mount Sinai Discovery & Innovation Hub Pitch Day competition."
-author:
 draft: false
 ---
 
