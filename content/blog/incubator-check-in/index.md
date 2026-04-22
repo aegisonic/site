@@ -13,22 +13,22 @@ So far, we've brought on two interns to our team who've provided support for res
 We're striving to fully implement the device as a headset for demo day on June 2nd.
 
 {{<figure
-  src="soldering.jpeg"
+  src="2026-04-20-1.jpeg"
   class="contain"
 >}}
 
 {{<figure
-  src="wiring.jpeg"
+  src="2026-04-20-2.jpeg"
   class="contain"
 >}}
 
 {{<figure
-  src="inner-ear.jpeg"
+  src="2026-04-20-3.jpeg"
   class="contain"
 >}}
 
 {{<figure
-  src="headset.jpeg"
+  src="2026-04-20-4.jpeg"
   class="contain"
 >}}
 
