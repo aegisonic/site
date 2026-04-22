@@ -3,7 +3,7 @@
     <div class="d-fb ai-s p-bl-100 bd-b fw-w bli-item">
         <span class="fc-n-500 m-b-050 bli-date">
             {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-            {{ $dateHuman := .Date | time.Format "Jan 01 2006" }}
+            {{ $dateHuman := .Date | time.Format ":date_medium" }}
             <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
         </span>
         <a class="bli-body" href="{{ .RelPermalink }}">
