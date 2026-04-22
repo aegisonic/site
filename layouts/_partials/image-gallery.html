@@ -30,7 +30,7 @@
         <!-- Credit: HugoCodex (https://github.com/jhvanderschee/hugocodex) with some modifications -->
         <figure>
             {{ $imgtitle := path.BaseName .Title }}
-            {{ $thumb := .Fit "400x400 q75" }}
+            {{ $thumb := .Fit "800x800 q75" }}
             {{ $full := .Fit "1600x1600 q50" }}
             <a href="{{ $full.Permalink }}" title="{{ $imgtitle }}" class="lightbox-image" data-src="{{ $full.Permalink }}">
                 <img src="{{ $thumb.Permalink }}" alt="{{ $imgtitle }}" title="{{ $imgtitle }}" loading="lazy">
