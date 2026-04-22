@@ -23,12 +23,4 @@ For most people, adaptive noise canceling (ANC) headphones or earplugs provide s
 
 Aegisonic uses a proprietary adaptive sound-processing system designed to reduce the intensity of harsh or unpredictable sounds while giving users intuitive control over their listening environment through a single dial. By integrating this technology into an affordable, comfortable headset, we aim to make even the noisiest settings — from busy cities to everyday homes — more accessible for everyone.
 
-## Our team
-
-- **Harilaos (Harry) Rentzeperis**, _Founder_  
-- **Frederika Rentzeperis**, _Co-Founder_  
-- Matthew Dillard, _Designer_  
-- Ifeanyi Ogbennaya, _Intern_  
-- Rafayah Murray, _Intern_  
-
 

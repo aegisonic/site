@@ -8,13 +8,16 @@ menus:
   main:
     - name: 'About'
       url: '/about'
-      weight: 1  
+      weight: 1
+    - name: 'Team'
+      url: '/team'
+      weight: 2  
     - name: 'Blog'
       url: '/blog'
-      weight: 2
+      weight: 3
     - name: 'Gallery'
       url: '/gallery'
-      weight: 3
+      weight: 4
 
 params:
   tagline: "Equitable acoustics"
