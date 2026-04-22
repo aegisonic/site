@@ -9,8 +9,10 @@
     {{ $hopper = $hopper | append (.Resources.ByType "image") }}
 {{ end }}
 
+{{ $sorted := collections.Sort $hopper "Name" "desc" }}
+
 <ul class="image-gallery p-bl-100">
-{{ range first $limit ($hopper | collections.Reverse) }}
+{{ range first $limit $sorted }}
     <li>
         <!-- Credit: HugoCodex (https://github.com/jhvanderschee/hugocodex) with some modifications -->
         <figure>
