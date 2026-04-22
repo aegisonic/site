@@ -1,0 +1,40 @@
+baseURL: "https://aegisonic.org/"
+languageCode: "en-us"
+
+title: "Aegisonic"
+description: "An adaptive headset designed to reduce auditory overstimulation & distress in autism."
+
+menus:
+  main:
+    - name: 'About'
+      url: '/about'
+      weight: 1
+    
+    - name: 'Blog'
+      url: '/blog'
+      weight: 2
+
+    - name: 'Gallery'
+      url: '/gallery'
+      weight: 3
+
+params:
+  tagline: "Equitable acoustics"
+
+  FaviconSVG: "/images/favicon.svg"
+  Favicon32: "/images/favicon-32x32.png"
+  Favicon16: "/images/favicon-16x16.png"
+
+    
+  hero:
+    link: "/about"
+    cta: "Learn more"
+
+module:
+  hugoVersion:
+    extended: false
+    min: "0.146.0"
+
+caches:
+  images:
+    dir: ':cacheDir/images'
