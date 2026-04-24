@@ -1,14 +1,16 @@
 
-<!-- partial "image-gallery" (dict "context" . "type" "feat" "cols" 3 "limit" 3) -->
+<!-- partial "image-gallery" (dict "context" . "type" "feat" "cols" 3 "limit" 3 "sort" "asc") -->
 
 {{ $toDisplay := slice }}
 {{ $hopper := slice }}
 {{ $cols := .cols }}
 {{ $limit := 9999 }}
-{{ $sort := "desc" }}
+{{ $sort := "" }}
+{{ $imgAlt := "" }}
+{{ $imgTitle := "" }}
 
-{{ with .sort }}{{ $sort = . }}{{ end }}
 {{ with .limit }}{{ $limit = . }}{{ end }}
+{{ with .sort }}{{ $sort = . }}{{ end }}
 
 {{ if eq .type "page" }}
     {{ $toDisplay = .images }}
@@ -35,18 +37,32 @@
 
 {{ $toDisplay := collections.Sort $toDisplay "Name" $sort }}
 
+
+
 <ul class="image-gallery {{ if $cols }}cols-{{ $cols }}{{ end }} p-bl-100">
 {{ range first $limit $toDisplay }}
     <li>
         <!-- Credit: HugoCodex (https://github.com/jhvanderschee/hugocodex) with some modifications -->
         <figure>
-            {{ $imgtitle := path.BaseName .Title }}
+            {{ $imgTitle = "" }}
+            {{ $imgAlt = "" }}
+            
+            {{ $fileName := path.BaseName .Name }}
+            {{ $parts := split $fileName ";" }}
+            {{ $imgTitle = index $parts 0 }}
+            {{ if gt (len $parts) 1 }}
+                {{ $imgAlt = index $parts 1 }}
+            {{ end }}
+            {{ $imgAlt = strings.TrimSpace $imgAlt }}
+
+            
             {{ $thumb := .Fit "800x800 q75" }}
             {{ $full := .Fit "1600x1600 q50" }}
-            <a href="{{ $full.Permalink }}" title="{{ $imgtitle }}" class="lightbox-image" data-src="{{ $full.Permalink }}">
-                <img src="{{ $thumb.Permalink }}" alt="{{ $imgtitle }}" title="{{ $imgtitle }}" loading="lazy">
+            {{ $imgAlt }}
+            <a href="{{ $full.Permalink }}" title="{{ $imgAlt }}" class="lightbox-image" data-src="{{ $full.Permalink }}">
+                <img src="{{ $thumb.Permalink }}" alt="{{ $imgAlt }}" loading="lazy">
             </a>
-            <!-- <figcaption>{{ $imgtitle }}</figcaption> -->
+            <!-- <figcaption>{ $imgtitle }</figcaption> -->
         </figure>
     </li>
 {{ end }}
