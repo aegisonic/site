@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 var filename = href.split('/').pop();
                 var split = filename.split(".");
                 var name = split[0];
-                element.setAttribute('title',name);
+                // element.setAttribute('title',name); // Commented out to allow for title setting within image-gallery.html
             }
         }
     });
