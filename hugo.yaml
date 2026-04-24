@@ -33,7 +33,7 @@ params:
 
   hero:
     link: "/about"
-    cta: "Learn more"
+    cta: "About Aegisonic"
 
 module:
   hugoVersion:
