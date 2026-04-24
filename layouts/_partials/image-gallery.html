@@ -58,7 +58,6 @@
             
             {{ $thumb := .Fit "800x800 q75" }}
             {{ $full := .Fit "1600x1600 q50" }}
-            {{ $imgAlt }}
             <a href="{{ $full.Permalink }}" title="{{ $imgAlt }}" class="lightbox-image" data-src="{{ $full.Permalink }}">
                 <img src="{{ $thumb.Permalink }}" alt="{{ $imgAlt }}" loading="lazy">
             </a>
