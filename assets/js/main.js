@@ -3,16 +3,16 @@
 document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('nav-main');
     const toggle = document.getElementById('nav-toggle');
-    console.log(menu);
+    // console.log(menu);
 
     toggle.addEventListener('click', function () {
-        console.log("clicking menu");
+        // console.log("clicking menu");
         const isOpen = menu.classList.contains('open');
         if (isOpen) {
-            console.log("is open");
+            // console.log("is open");
             menu.classList.remove('open');
         } else {
-            console.log("is not open");
+            // console.log("is not open");
             menu.classList.add('open')
         }
         toggle.classList.toggle('active');
