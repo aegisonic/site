@@ -39,6 +39,8 @@
 
 {{ $toDisplay := collections.Sort $toDisplay "Name" $sort }}
 
+
+
 <ul class="image-gallery {{ if $cols }}cols-{{ $cols }}{{ end }} p-bl-100">
 {{ range first $limit $toDisplay }}
     <li>
