@@ -26,18 +26,18 @@
     {{ if eq .type "feat" }}
         {{ range $hopper }}
             {{ $fileName := path.BaseName .Name }}
-            {{ if in site.Params.featuredImages $fileName }}
+            {{ $parts := split $fileName "__" }}
+            {{ $imageID := index $parts 0 }}
+            {{ if in site.Params.featuredImages $imageID }}
             {{ $toDisplay = $toDisplay | append . }}
             {{ end }}
         {{ end }}
-    {{ else }}
+        {{ else }}
         {{ $toDisplay = $hopper }}
     {{ end }}
 {{ end }}
 
 {{ $toDisplay := collections.Sort $toDisplay "Name" $sort }}
-
-
 
 <ul class="image-gallery {{ if $cols }}cols-{{ $cols }}{{ end }} p-bl-100">
 {{ range first $limit $toDisplay }}
@@ -48,7 +48,7 @@
             {{ $imgAlt = "" }}
             
             {{ $fileName := path.BaseName .Name }}
-            {{ $parts := split $fileName ";" }}
+            {{ $parts := split $fileName "__" }}
             {{ $imgTitle = index $parts 0 }}
             {{ if gt (len $parts) 1 }}
                 {{ $imgAlt = index $parts 1 }}
