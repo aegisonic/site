@@ -11,13 +11,12 @@ _Co-Founder_
 **Frederika Rentzeperis**  
 _Co-Founder_
 
-**Brayden Davis**
+**Brayden Davis**  
 _Co-Inventor_
 
 **Matthew Dillard**  
 _Designer_  
 
-### Former interns
-**Ifeanyi Ogbennaya**  
-
-**Rafayah Murray**  
+### Former interns  
+Ifeanyi Ogbennaya  
+Rafayah Murray 
