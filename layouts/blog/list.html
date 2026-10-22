@@ -1,11 +1,11 @@
-{{ define "main"}}
+{{ define "main" }}
 
 <section>
     <div class="container">
         {{ partial "breadcrumbs.html" . }}
         <article>
             <h1>Blog</h1>
-            {{ partial "blog-list.html" . }}
+            {{ partial "blog-list.html" (dict "context" . "limit" 9999 ) }}
         </article>
     </div>
     

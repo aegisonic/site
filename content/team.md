@@ -6,16 +6,17 @@ draft: false
 ---
 
 **Harilaos (Harry) Rentzeperis**  
-_Founder_  
+_Co-Founder_  
 
 **Frederika Rentzeperis**  
 _Co-Founder_
 
+**Brayden Davis**  
+_Co-Inventor_
+
 **Matthew Dillard**  
 _Designer_  
 
-**Ifeanyi Ogbennaya**  
-_Intern_  
-
-**Rafayah Murray**  
-_Intern_  
+### Former interns  
+Ifeanyi Ogbennaya  
+Rafayah Murray 
