@@ -6,6 +6,6 @@ draft: false
 
 # Equitable acoustics
 
-Aegisonic is developing an adaptive headset to reduce auditory overstimulation & distress for populations with autism.
+Aegisonic is developing an adaptive headset to reduce auditory overstimulation and distress for populations with misophonia and autism.
 
 We’re striving to make everyday life more accessible for those with heightened sound sensitivity.

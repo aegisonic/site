@@ -3,6 +3,7 @@
 
 {{ $toDisplay := slice }}
 {{ $hopper := slice }}
+{{ $galleryType := .type }}
 {{ $cols := .cols }}
 {{ $limit := 9999 }}
 {{ $sort := "" }}
@@ -24,20 +25,28 @@
     {{ end }}
 
     {{ if eq .type "feat" }}
-        {{ range $hopper }}
-            {{ $fileName := path.BaseName .Name }}
-            {{ $parts := split $fileName "__" }}
-            {{ $imageID := index $parts 0 }}
-            {{ if in site.Params.featuredImages $imageID }}
-            {{ $toDisplay = $toDisplay | append . }}
+        {{ range site.Params.featuredImages }}
+            {{ $currImg := . }}
+            {{ range $hopper }}
+                {{ $fileName := path.BaseName .Name }}
+                {{ $parts := split $fileName "__" }}
+                {{ $imageID := index $parts 0 }}
+                {{ if eq $imageID $currImg }}
+                    {{ $toDisplay = $toDisplay | append . }}
+                {{ end }}   
             {{ end }}
         {{ end }}
-        {{ else }}
+    {{ else }}
         {{ $toDisplay = $hopper }}
     {{ end }}
+    
+
 {{ end }}
 
-{{ $toDisplay := collections.Sort $toDisplay "Name" $sort }}
+{{ if ne $galleryType "feat" }}
+    {{ $toDisplay = collections.Sort $toDisplay "Name" $sort }}
+{{ end }}
+
 
 
 
