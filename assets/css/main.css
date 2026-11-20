@@ -367,6 +367,10 @@ article {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.image-gallery.cols-1 {
+  grid-template-columns: none;
+}
+
 .image-gallery li {
   display: inline-block;
   align-self: center;
