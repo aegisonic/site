@@ -17,7 +17,13 @@
             {{ .Content }}
             
             {{ if .Param "gallery" }}
-                {{ partial "image-gallery" (dict "context" . "type" "page" "images" (.Resources.ByType "image") "cols" 2 "sort" "asc") }}
+                {{ $cols := .Param "columns" }}
+                {{ with $cols }}
+                {{ else }}
+                    {{ $cols := 2 }}
+                {{ end }}
+
+                {{ partial "image-gallery" (dict "context" . "type" "page" "images" (.Resources.ByType "image") "cols" $cols "sort" "asc") }}
             {{ end }}
 
         </article>
